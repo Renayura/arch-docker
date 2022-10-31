@@ -17,6 +17,11 @@ pacman -S --noconfirm \
                  sudo jdk8-openjdk bison cmake flex libelf cpio unzip dpkg \
                  ninja openssl python3 python-pip uboot-tools neofetch ncurses
 
+# Python Symlinks
+ln -sf /usr/bin/pip3.10 /usr/bin/pip3
+ln -sf /usr/bin/pip3.10 /usr/bin/pip
+ln -sf /usr/bin/python3.10 /usr/bin/python3
+
 # Fix pod2man missing error
 export PATH=/usr/bin/core_perl:$PATH
 
