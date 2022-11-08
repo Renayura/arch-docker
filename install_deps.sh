@@ -13,7 +13,7 @@ pacman -S --noconfirm \
                  python-sphinx python-sphinx_rtd_theme graphviz imagemagick \
                  cmake svn lzip git make patchelf zip \
                  rclone inetutils lld llvm base-devel\
-                 clang bc ccache multilib-devel glibc z3 \
+                 clang bc ccache multilib-devel glibc z3 openmp \
                  sudo jdk8-openjdk bison cmake flex libelf cpio unzip dpkg \
                  ninja openssl python3 python-pip uboot-tools neofetch ncurses
 
