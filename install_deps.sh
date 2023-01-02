@@ -15,7 +15,7 @@ pacman -S --noconfirm \
                  rclone inetutils lld llvm base-devel\
                  clang bc ccache multilib-devel glibc z3 openmp \
                  sudo jdk8-openjdk bison cmake flex libelf cpio unzip dpkg \
-                 ninja openssl python3 python-pip uboot-tools neofetch ncurses
+                 ninja openssl python3 python-pip uboot-tools neofetch ncurses zsh
 
 # Python Symlinks
 ln -sf /usr/bin/pip3.10 /usr/bin/pip3
@@ -33,3 +33,7 @@ echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 echo "LANG=en_US.UTF-8" | sudo tee -a /etc/locale.conf
 sudo locale-gen en_US.UTF-8
+
+# zsh
+chsh -s /bin/zsh root
+sh -c "$(curl -sL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
